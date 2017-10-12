@@ -8,10 +8,21 @@
   </head>
   <body>
     <header class="container">
-      <h1><a href="#">narxil</a></h1><h3>.pythonanywhere.com</h3>
+      <h1><a href="#">narxil</a></h1><h4>.pythonanywhere.com</h4>
+
+
       {% for post in posts %}
-        {{ posts }}
+      <div class="">
+
+        <p>Pubblicato: {{ post.published_date }}</p>
+        <h1><a href="#">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreakbr }}</p>
+
+      </div>
       {% endfor %}
+  
+
+
     </header>
   </body>
 </html>

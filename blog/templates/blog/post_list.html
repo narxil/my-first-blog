@@ -8,8 +8,10 @@
   </head>
   <body>
     <header class="container">
-      <h1>narxil</h1><h2>.pythonanywhere.com</h2>
-      {{ posts }}
+      <h1><a href="#">narxil</a></h1><h3>.pythonanywhere.com</h3>
+      {% for post in posts %}
+        {{ posts }}
+      {% endfor %}
     </header>
   </body>
 </html>

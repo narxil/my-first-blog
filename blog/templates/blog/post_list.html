@@ -21,8 +21,10 @@
         <div class="data">
           <p>Pubblicato: {{ post.published_date }}</p>
         </div>
-        <h4>{{ post.title }}</h4>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <div class="post">
+          <h4>{{ post.title }}</h4>
+          <p>{{ post.text|linebreaksbr }}</p>
+        </div>
       </div>
       {% endfor %}
 

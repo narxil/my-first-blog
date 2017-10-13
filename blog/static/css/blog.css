@@ -6,4 +6,5 @@ h1 a:hover{color: #CF0D8F;}
 .data{font-size: 0.8em; color:#E80C7A; padding-bottom: 0px; width: 100%; text-align: center;}
 .post{width: 100%; font-size: 1.2em; margin-top: 0px; padding: 0px 30px 30px 30px; text-align: center;}
 h4.titolo_post{text-align: center; font-size: 2.5em;}
-a{font-size: 0.8em; color:#E80C7A; padding-bottom: 0px; width: 100%; text-align: center;}
+a.link{font-size: 0.8em; color:#E80C7A; padding-bottom: 0px; width: 100%; text-align: center;}
+a:hover.link{font-size: 0.8em; color:#CF0D8F; padding-bottom: 0px; width: 100%; text-align: center;}

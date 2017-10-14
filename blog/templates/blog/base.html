@@ -9,21 +9,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   </head>
   <body>
-    {% extends 'blog/base.html'%}
+    <header class="containerMe">
 
-    {% block content%}
-    {% for post in posts %}
-    <div class="">
-      <div class="post">
-        <h4 class="titolo_post">{{ post.title }}</h4>
-        <div class="data">
-          <p>Pubblicato: {{ post.published_date }}</p>
-        </div>
-        <p>{{ post.text|linebreaksbr }}</p>
-        <a class="link" href="#">read</a>
+      <div class="logo">
+        <h1><a href="#">narxil</a></h1>
       </div>
-    </div>
-    {% endfor %}
-    {% endblock%}
+
+
+      {% block content %}
+      {% endblock %}
+
+
+
+    </header>
   </body>
 </html>

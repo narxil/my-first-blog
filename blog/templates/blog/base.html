@@ -9,18 +9,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   </head>
   <body>
-    <header class="containerMe">
-
-      <div class="logo">
-        <h1><a href="#">narxil</a></h1>
-      </div>
-
-
-      {% block content %}
-      {% endblock %}
-
-
-
-    </header>
-  </body>
+    <div class="page-header">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
 </html>
